@@ -2,18 +2,22 @@
 <resources>
     <color name="colorPrimary">#00897b</color>
     <color name="colorPrimaryDark">#00574b</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#d81b60</color>
     <color name="colorAccent2">#ffea00</color>
     <color name="colorAccent3">#0288d1</color>
     <color name="colorAccent4">#0277bd</color>
     <color name="colorBotonRegister">#00e676</color>
     <color name="colorLoadingBackground">#14a5d6a7</color>
     <color name="colorWhiteSemiTransparent">#c8ffffff</color>
-    <color name="colorNoTick">#d50000</color>
+    <color name="colorNoTick">#dd2c00</color>
     <color name="colorCardBackground">#7dffffff</color>
     <color name="colorBtn">#008577</color>
+    <color name="colorRed200">#ffab91</color>
     <color name="colorGradientStart">#a5d6a7</color>
     <color name="colorGradientEnd">#00c853</color>
     <color name="colorGradientPruebaStart">#81D4FA</color>
     <color name="colorGradientPruebaEnd">#0091EA</color>
+    <color name="colorGray">#455a64</color>
+    <color name="colorLightGray">#f5f6f7</color>
+    <color name="colorPlayGames">#8bc34a</color>
 </resources>

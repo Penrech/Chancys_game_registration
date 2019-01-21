@@ -7,7 +7,7 @@
         android:layout_height="match_parent"
         tools:context=".HomeActivity"
         android:theme="@style/AppTheme.NoActionBar.LoadingHome"
-        android:fitsSystemWindows="true">
+        android:fitsSystemWindows="true" android:background="@android:color/background_light">
 
     <android.support.constraint.ConstraintLayout
             xmlns:android="http://schemas.android.com/apk/res/android"

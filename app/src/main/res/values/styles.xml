@@ -33,6 +33,9 @@
     <style name="customSpinner" parent="Widget.AppCompat.ProgressBar">
         <item name="android:colorControlActivated">@android:color/background_light</item>
     </style>
+    <style name="customLoadingSpinner" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:colorControlActivated">@color/colorGradientEnd</item>
+    </style>
     <style name="customSeekBar" parent="Widget.AppCompat.SeekBar.Discrete">
         <item name="tickMark">@null</item>
         <item name="android:thumbTint">@color/colorAccent4</item>
@@ -47,14 +50,6 @@
     <style name="customRatingBar" parent="Widget.AppCompat.RatingBar">
         <item name="android:progressDrawable">@drawable/custom_ratingstars</item>
         <item name="android:progressTint">@color/colorAccent2</item>
-        <item name="android:progressBackgroundTint">@color/colorCardBackground</item>
-    </style>
-    <style name="biggerCustomRatingBar" parent="Widget.AppCompat.RatingBar">
-        <item name="android:progressDrawable">@drawable/bigger_custom_ratingstars</item>
-        <item name="android:colorControlActivated">@color/colorAccent2</item>
-        <item name="android:colorControlNormal">@color/colorAccent2</item>
-        <item name="android:progressTint">@color/colorAccent2</item>
-        <item name="android:colorAccent">@color/colorAccent2</item>
         <item name="android:progressBackgroundTint">@color/colorCardBackground</item>
     </style>
     <style name="customDialog" parent="Theme.AppCompat.Dialog.Alert">

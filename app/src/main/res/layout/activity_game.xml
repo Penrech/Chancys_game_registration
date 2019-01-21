@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior"
-                android:name="com.pauenrech.regalonavidadpauenrech.fragments.GameControllerFragment"
+                android:name="com.pauenrech.chancys.fragments.GameControllerFragment"
                 android:id="@+id/gameControllerFragment"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +53,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintVertical_chainStyle="spread_inside"/>
 
-        <com.pauenrech.regalonavidadpauenrech.tools.CustomViewPager
+        <com.pauenrech.chancys.tools.CustomViewPager
                 android:id="@+id/gamePager"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

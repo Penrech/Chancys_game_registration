@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.pauenrech.regalonavidadpauenrech">
+          package="com.pauenrech.chancys">
 
     <application
             android:allowBackup="true"
@@ -10,7 +10,23 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".HomeActivity"
+                android:name="com.pauenrech.chancys.HomeActivity"
+                android:theme="@style/AppTheme.NoActionBar.InvisibleWhiteText"
+                android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+
+        <activity
+                android:name="com.pauenrech.chancys.ProfileActivity"
+                android:label="@string/profile_activity_label"
+                android:theme="@style/AppTheme.NoActionBar.InvisibleWhiteText"
+                android:screenOrientation="portrait">
+        </activity>
+        <activity
+                android:name="com.pauenrech.chancys.LoginActivity"
                 android:theme="@style/AppTheme.NoActionBar.InvisibleWhiteText"
                 android:screenOrientation="portrait">
             <intent-filter>
@@ -19,29 +35,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <meta-data
-                android:name="preloaded_fonts"
-                android:resource="@array/preloaded_fonts"/>
-
         <activity
-                android:name=".ProfileActivity"
-                android:label="@string/profile_activity_label"
+                android:name="com.pauenrech.chancys.SelectionActivity"
                 android:theme="@style/AppTheme.NoActionBar.InvisibleWhiteText"
                 android:screenOrientation="portrait">
         </activity>
         <activity
-                android:name=".RegisterActivity"
-                android:theme="@style/AppTheme.NoActionBar.InvisibleWhiteText"
-                android:screenOrientation="portrait">
-        </activity>
-        <activity
-                android:name=".SelectionActivity"
-                android:theme="@style/AppTheme.NoActionBar.InvisibleWhiteText"
-                android:screenOrientation="portrait">
-        </activity>
-        <activity
-                android:name=".GameActivity"
+                android:name="com.pauenrech.chancys.GameActivity"
                 android:theme="@style/AppTheme.NoActionBar.InvisibleWhiteText"
                 android:screenOrientation="portrait">
         </activity>

@@ -2,11 +2,16 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
-        tools:context="com.pauenrech.regalonavidadpauenrech.HomeActivity">
+        tools:context="com.pauenrech.chancys.HomeActivity">
     <item
             android:id="@+id/action_profile"
             android:title="@string/action_profile"
             android:orderInCategory="100"
+            app:showAsAction="never"/>
+    <item
+            android:title="@string/action_credentials"
+            android:id="@+id/action_credentials"
+            android:orderInCategory="105"
             app:showAsAction="never"/>
     <item
             android:title="@string/action_ranking"
@@ -14,8 +19,8 @@
             app:showAsAction="never"
             android:id="@+id/action_ranking"/>
     <item
-            android:title="@string/action_help"
-            android:id="@+id/action_help"
+            android:title="@string/action_logout"
+            android:id="@+id/action_logout"
             android:orderInCategory="120"
             app:showAsAction="never"/>
 </menu>

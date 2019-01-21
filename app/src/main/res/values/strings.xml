@@ -49,4 +49,11 @@
     <string name="stargame_tip2">Dibuja un tick invertido para marcar la afirmación como falsa</string>
     <string name="stargame_main_label">Recuerda</string>
     <string name="stargame_button_start_text">Iniciar</string>
+    <string name="form_error_not_valid_email">El email introducido no es valido</string>
+    <string name="form_password_too_short">La contraseña debe de tener más de 8 caracteres</string>
+    <string name="form_password_not_equal">Las contraseñas no coinciden</string>
+    <string name="format_error_too_short_username">El username debe tener más de 2 caraceres</string>
+    <string name="action_credentials">Credenciales</string>
+    <string name="action_logout">Logout</string>
+    <string name="game_gameover_text">Gameover</string>
 </resources>
