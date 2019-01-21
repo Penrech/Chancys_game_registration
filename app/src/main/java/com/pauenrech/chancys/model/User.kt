@@ -33,6 +33,7 @@ class User(
     var puntuacion: Int = 0,
     var ranking: Int = -1,
     var conectado: Boolean = false,
+    var type: String = "email",
     @SerializedName("temas")
     //var temas : List<MutableList<@JvmSuppressWildcards ThemeScore>> = listOf()
     var temas: Map<String,Temas_dificultad> = mapOf(),
@@ -40,7 +41,6 @@ class User(
 {
 
     var mapaTemas: MutableMap<String,MutableMap<String,@JvmSuppressWildcards ThemeScore>> = mutableMapOf()
-    var numeroDeTemas : Int = 0
 
     init {
         Log.i("TAGLOOP","tamaño de temas ${temas.containsKey("facil")}")

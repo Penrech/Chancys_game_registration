@@ -102,8 +102,6 @@ class HomeActivity : AppCompatActivity() {
         getConexionFromFirebase()
         getUserData()
         setPointsCounterListener()
-
-
     }
 
 
@@ -161,7 +159,6 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun getTemasFromFirebase(){
-
         temasRef!!.addListenerForSingleValueEvent(object: ValueEventListener{
             override fun onCancelled(p0: DatabaseError) {}
 
@@ -178,34 +175,6 @@ class HomeActivity : AppCompatActivity() {
                 userRef!!.child("temas").updateChildren(userData!!.getTemasParaSubirAFirebase())
             }
         })
-
-        /*
-        temasRefListener = temasRef!!.addChildEventListener(object : ChildEventListener {
-            override fun onCancelled(p0: DatabaseError) {}
-
-            override fun onChildMoved(p0: DataSnapshot, p1: String?) {}
-
-            override fun onChildChanged(p0: DataSnapshot, p1: String?) {
-                val tema = p0.getValue(Tema::class.java)
-                userData.addTemaLista(tema!!.name,tema.id)
-                userRef!!.child("temas").setValue(userData.temas)
-            }
-
-            override fun onChildAdded(p0: DataSnapshot, p1: String?) {
-                val tema = p0.getValue(Tema::class.java)
-                userData.addTemaLista(tema!!.name,tema.id)
-                userRef!!.child("temas").setValue(userData.temas)
-            }
-
-            override fun onChildRemoved(p0: DataSnapshot) {
-                val tema = p0.getValue(Tema::class.java)
-                val list = mutableListOf(tema!!)
-                userData.deleteTema(list)
-                userRef!!.child("temas").setValue(userData.temas)
-            }
-
-        })
-        temasRefHasListener = true*/
     }
 
     private fun setPointsCounterListener(){
@@ -315,6 +284,10 @@ class HomeActivity : AppCompatActivity() {
         snack.show()
     }
 
+    fun setUserDisconnected(disconnected: Boolean){
+        userRef!!.child("conectado").setValue(disconnected)
+    }
+
     override fun onStart() {
         setAuthListener()
         super.onStart()
@@ -327,9 +300,6 @@ class HomeActivity : AppCompatActivity() {
         loggedUserPointsRef!!.removeEventListener(loggedUserPointsListener!!)
         loggedUserPointsHasListener = false
 
-      /* temasRef!!.removeEventListener(temasRefListener!!)
-        temasRefHasListener = false
-*/
         super.onPause()
     }
 
@@ -344,15 +314,15 @@ class HomeActivity : AppCompatActivity() {
         if (!loggedUserPointsHasListener){
             setPointsCounterListener()
         }
-       /*if (!temasRefHasListener){
-            getTemasFromFirebase()
-        }*/
+
         super.onResume()
     }
 
-    override fun onDestroy() {
+    override fun onStop() {
+        setUserDisconnected(true)
         conectionRef!!.removeEventListener(conectionListener!!)
         conectionRefHasListener = false
-        super.onDestroy()
+        super.onStop()
     }
+
 }

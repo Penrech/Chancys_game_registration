@@ -50,8 +50,9 @@ class LoginWithChancyFragment : Fragment() {
             if (!validPassword)
                 errorWithPassword(getString(R.string.form_password_too_short))
             if (validEmail && validPassword){
-                listener?.onLoginButtonClick(email,password)
                 setLoading(true)
+                listener?.onLoginButtonClick(email,password)
+
             }
         }
     }

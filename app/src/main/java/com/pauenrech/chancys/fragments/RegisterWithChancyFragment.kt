@@ -58,9 +58,10 @@ class RegisterWithChancyFragment : Fragment() {
                 errorWithPassword(getString(R.string.form_password_too_short))
             if (!samePassword)
                 errorWithPasswords()
-            if (validEmail && validPassword && samePassword){
-                listener?.onRegisterButtonClick(email,username, password)
+            if (validEmail && validPassword && samePassword && validUsername){
                 setLoading(true)
+                listener?.onRegisterButtonClick(email,username, password)
+
             }
         }
     }

@@ -24,9 +24,6 @@ class ProfileActivity : AppCompatActivity() {
     private var layoutManager: NoScrollLinearLayoutManager? = null
     private var adapter: RecyclerView.Adapter<profileSpecificListAdapter.SpecificListViewHolder>? = null
 
-    var initialSpecificData : List<MutableList<User.ThemeScore>>? = null
-    var initialDificultad : Int? = null
-
     private var firebaseDatabase: FirebaseDatabase? = null
     private var userRef: DatabaseReference? = null
     private var userNamesRef: DatabaseReference? = null
@@ -35,15 +32,11 @@ class ProfileActivity : AppCompatActivity() {
     private var userNameListener: ValueEventListener? = null
 
     private var userNameHasListener: Boolean = false
-    private var conectionRefHasListener: Boolean = false
 
     private var userUID: String? = null
     private var userData: User = User()
 
-
     var nicknameChanged: Boolean = true
-    var handler: Handler? = null
-    var runnable: Runnable? = null
 
     var imm : InputMethodManager? = null
 

@@ -56,4 +56,5 @@
     <string name="action_credentials">Credenciales</string>
     <string name="action_logout">Logout</string>
     <string name="game_gameover_text">Gameover</string>
+    <string name="web_client_id">562001186539-2m2p5tm07ii94pnaij039mcifj7decvj.apps.googleusercontent.com</string>
 </resources>
