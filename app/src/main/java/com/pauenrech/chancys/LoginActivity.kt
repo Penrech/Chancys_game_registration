@@ -323,6 +323,21 @@ class LoginActivity : AppCompatActivity(),
 
     private fun checkUsuarioEnDatabase(user: FirebaseUser, googleEmail: String){
         var checked = false
+        usersRef!!.child(user.uid).addListenerForSingleValueEvent(object : ValueEventListener{
+            override fun onCancelled(p0: DatabaseError) {}
+
+            override fun onDataChange(p0: DataSnapshot) {
+                if (!checked){
+                    if (p0.exists()){
+                        updateUI(user)
+                    }
+                    else{
+                        formatUserToDatabase(user,googleEmail)
+                    }
+                    checked = true
+                }
+            }
+        })/*
         userNamesRef!!.orderByValue().equalTo(user.uid).addListenerForSingleValueEvent(object : ValueEventListener{
             override fun onCancelled(p0: DatabaseError) {}
 
@@ -336,7 +351,7 @@ class LoginActivity : AppCompatActivity(),
                     checked = true
                 }
             }
-        })
+        })*/
         if (!conectionState){
             if (!checked){
                 manageErrorLoginWithPlayGames(LoginWithPlayGamesError.ERROR_REGISTERING_TO_FIREBASE)
@@ -469,7 +484,7 @@ class LoginActivity : AppCompatActivity(),
         })
         if (!conectionState){
             if (!usernameCheck){
-                Toast.makeText(this,"Error de conexion",Toast.LENGTH_LONG).show()
+                manageErrorRegisteringWithChancy(RegisterError.UNKNOW_ERROR)
                 usernameCheck = true
             }
         }

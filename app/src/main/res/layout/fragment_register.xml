@@ -83,7 +83,6 @@
                             android:focusedByDefault="false"
                             android:id="@+id/registerEmail"
                             android:hint="Email"
-                            android:maxLength="15"
                             android:textSize="18sp"
                             android:textColor="@android:color/background_light"
                             android:fontFamily="@font/comfortaa_bold"
