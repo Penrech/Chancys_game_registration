@@ -28,7 +28,7 @@ and the other one just with Firebase</p>
 </p>
 
 <h1>Demo *</h1>
-<p style>*A higher quality video opens on YouTube when clicked</p>
+<p style>*A higher quality and longer video opens on YouTube when clicked</p>
 
 <p align="center">
   <a href='https://www.youtube.com/watch?v=KlSoRI8pjrM'><img width = '49%' src='Chancys1.gif'/></a>
