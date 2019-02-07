@@ -36,7 +36,7 @@ and the other one just with Firebase</p>
 </p>
 <br>
 <p align="center">
-  <a href='#imgE2'><img id='imgE2' width = '49%' src='Chancys_2-08'/></a>
+  <a href='#imgE2'><img id='imgE2' width = '49%' src='Chancys_2-08.png'/></a>
   <a href='https://www.youtube.com/watch?v=uW385FLkbG8'><img width = '49%' src='Chancys2.gif'/></a>
 </p>
 <br>
