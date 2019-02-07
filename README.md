@@ -12,7 +12,7 @@
 </ul>
 
 <h1>Description</h1>
-<p>This app is an upgraded version of this: https://github.com/Penrech/SharedPreferences_Game .Basically adds user authentification and a fully integration of Firebase both local and external</p>
+<p>This app is an upgraded version of this: https://github.com/Penrech/SharedPreferences_Game . Basically adds user authentification and a fully integration of Firebase both local and external</p>
 <p>In order to use Firebase "locally" I use its tool KeepSynced which makes a cached copy of selected elements of the online database</p>
 <p>The design was also changed a bit to armonizate more the colors, by the way it's still too greenish</p>
 <p>I've decided to make an other repo more than a new branch on the old repo because I've want to keep two different aproaches of the app. One with local database (which could be upgrated to SQL in the future) and Firebase,
